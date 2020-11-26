@@ -23,7 +23,12 @@ class CategoriesCollectioViewController: NSObject, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoriesCell", for: indexPath) as! CategoriesCollectionViewCell
         let catData = data[indexPath.section]
-        cell.categoryName.text = catData.tags?[0].title.capitalized
+        if catData.tags!.count > 0 {
+            cell.categoryName.text = catData.tags?[0].title.capitalized
+        } else {
+            cell.categoryName.text = "Random"
+        }
+        
         cell.previewImage.kf.setImage(with: URL(string: catData.preview_photos[0].urls.small), placeholder: UIImage(named: "img_blankGrey"), completionHandler: {
             result in
             

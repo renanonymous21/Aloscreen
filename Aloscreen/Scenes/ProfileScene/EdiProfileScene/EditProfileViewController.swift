@@ -121,7 +121,7 @@ class EditProfileViewController: UIViewController, EditProfileDisplayLogic {
     }
 
     func displaySomething(viewModel: EditProfile.Something.ViewModel) {
-    //nameTextField.text = viewModel.name
+        
     }
 }
 

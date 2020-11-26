@@ -81,6 +81,7 @@ class UsersOperational {
             data.setValue(gender, forKey: "gender")
             
             try ctx.save()
+            alert.showMessage(title: "Okay", msg: "Your data has been updated")
         } catch let error {
             print(error)
         }
