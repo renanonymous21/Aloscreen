@@ -95,6 +95,9 @@ extension RegistrationViewController: UITextFieldDelegate {
         if name.isEmpty || username.isEmpty || password.isEmpty {
             alert.showMessage(title: "Oops!", msg: "All fields must be filled!")
             return false
+        } else if password.count < 6 || username.count < 6 {
+            alert.showMessage(title: "Oops!", msg: "Username or password minimum is 6 characters")
+            return false
         } else {
             return true
         }

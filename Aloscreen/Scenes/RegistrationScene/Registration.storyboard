@@ -40,7 +40,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -53,12 +53,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTn-Pi-ewT" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username min. 6 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTn-Pi-ewT" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="23.666666666666686" width="280" height="34"/>
                                                 <color key="backgroundColor" red="0.91372549020000005" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -71,12 +71,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-uU-g65" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password min. 6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-uU-g65" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="23.666666666666657" width="280" height="34"/>
                                                 <color key="backgroundColor" red="0.91372549020000005" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -126,10 +126,10 @@
     </scenes>
     <designables>
         <designable name="TTn-Pi-ewT">
-            <size key="intrinsicContentSize" width="69" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="118" height="18.666666666666668"/>
         </designable>
         <designable name="a3E-uU-g65">
-            <size key="intrinsicContentSize" width="65.333333333333329" height="17"/>
+            <size key="intrinsicContentSize" width="110.66666666666667" height="17"/>
         </designable>
         <designable name="nxc-zo-yyx">
             <size key="intrinsicContentSize" width="78" height="19.666666666666668"/>

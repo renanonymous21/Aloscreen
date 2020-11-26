@@ -20,10 +20,9 @@ struct APIManager: APIServiceProtocol {
         return Promise {
             data in
             
-//            showLoader()
             provider.request(endpoint) {
                 result in
-//                hideLoader()
+
                 switch result {
                 case let .success(response):
                     let decoder = JSONDecoder()

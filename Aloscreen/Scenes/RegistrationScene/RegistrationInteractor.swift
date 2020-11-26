@@ -37,7 +37,7 @@ class RegistrationInteractor: RegistrationBusinessLogic, RegistrationDataStore {
         }.finally {
             switch response {
             case .none:
-                alert.showMessage(title: "Oops!", msg: "Something wrong when try to register your account, please try again later")
+                alert.showMessage(title: "Oops!", msg: "Something wrong when try to register your account or username already exist")
             case .some(_):
                 self.presenter?.presentRegosteredUser(response: response!)
             }
