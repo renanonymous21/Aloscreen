@@ -1,0 +1,6 @@
+framework module Pods_Aloscreen {
+  umbrella header "Pods-Aloscreen-umbrella.h"
+
+  export *
+  module * { export * }
+}

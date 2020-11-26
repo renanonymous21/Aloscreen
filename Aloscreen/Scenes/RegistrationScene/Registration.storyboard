@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KlV-b4-Fl5">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register User-->
+        <scene sceneID="hUo-Ym-xYt">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationStoryboard" id="KlV-b4-Fl5" customClass="RegistrationViewController" customModule="Aloscreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RwS-CF-4Fe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-bU-IiB">
+                                <rect key="frame" x="67" y="74" width="280" height="263"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j5G-5x-F9u">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="57.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlD-Ok-cxP">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxc-zo-yyx" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23.666666666666671" width="280" height="34"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="SsG-65-5os">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="34" id="l2e-vr-vU8"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TZo-th-21V">
+                                        <rect key="frame" x="0.0" y="75.666666666666657" width="280" height="57.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-Qf-vGc">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTn-Pi-ewT" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23.666666666666686" width="280" height="34"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-t9-wdj">
+                                        <rect key="frame" x="0.0" y="151.33333333333334" width="280" height="57.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTl-om-Cig">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-uU-g65" customClass="CustomTextField" customModule="Aloscreen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23.666666666666657" width="280" height="34"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-B3-NgF">
+                                        <rect key="frame" x="0.0" y="227" width="280" height="36"/>
+                                        <color key="backgroundColor" red="0.51913321020000003" green="0.84004145860000001" blue="0.93647819759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="diY-DP-O6M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Register Me!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="KlV-b4-Fl5" eventType="touchUpInside" id="b3R-ls-fVb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a3E-uU-g65" firstAttribute="width" secondItem="uiB-bU-IiB" secondAttribute="width" id="75A-N7-TMQ"/>
+                                    <constraint firstItem="pyW-B3-NgF" firstAttribute="centerX" secondItem="uiB-bU-IiB" secondAttribute="centerX" id="FYM-Eb-O2q"/>
+                                    <constraint firstItem="TTn-Pi-ewT" firstAttribute="height" secondItem="nxc-zo-yyx" secondAttribute="height" id="W0a-Rh-c4U"/>
+                                    <constraint firstItem="TTn-Pi-ewT" firstAttribute="width" secondItem="uiB-bU-IiB" secondAttribute="width" id="dgl-zG-7F5"/>
+                                    <constraint firstItem="a3E-uU-g65" firstAttribute="height" secondItem="nxc-zo-yyx" secondAttribute="height" id="g1y-dr-ic7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ho-Wn-Nuo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uiB-bU-IiB" firstAttribute="centerX" secondItem="0Ho-Wn-Nuo" secondAttribute="centerX" id="CcF-JL-8FJ"/>
+                            <constraint firstItem="uiB-bU-IiB" firstAttribute="top" secondItem="0Ho-Wn-Nuo" secondAttribute="top" constant="30" id="a3J-1N-RIh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register User" id="jCx-Dz-lk3"/>
+                    <connections>
+                        <outlet property="NameTextField" destination="nxc-zo-yyx" id="gkz-Zy-ZK0"/>
+                        <outlet property="PasswordTextField" destination="a3E-uU-g65" id="lKJ-kD-ge8"/>
+                        <outlet property="UsernameTextField" destination="TTn-Pi-ewT" id="2CU-SK-6rD"/>
+                        <outlet property="registerButton" destination="pyW-B3-NgF" id="5Sz-Mg-hbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcO-m6-iFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="TTn-Pi-ewT">
+            <size key="intrinsicContentSize" width="69" height="18.666666666666668"/>
+        </designable>
+        <designable name="a3E-uU-g65">
+            <size key="intrinsicContentSize" width="65.333333333333329" height="17"/>
+        </designable>
+        <designable name="nxc-zo-yyx">
+            <size key="intrinsicContentSize" width="78" height="19.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
