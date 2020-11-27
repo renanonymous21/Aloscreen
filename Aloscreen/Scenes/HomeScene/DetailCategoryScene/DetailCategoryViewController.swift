@@ -85,7 +85,7 @@ class DetailCategoryViewController: UIViewController, DetailCategoryDisplayLogic
     }()
     
     func getPhotosByCategory() {
-        let randomInt = Int.random(in: 1..<20)
+        let randomInt = Int.random(in: 1...10)
         SelectedCategoryValue.text = receivedCategory.capitalized
         let request = DetailCategory.FetchPictures.Request(page: randomInt, query: receivedCategory)
         interactor?.getDetailPictures(request: request)

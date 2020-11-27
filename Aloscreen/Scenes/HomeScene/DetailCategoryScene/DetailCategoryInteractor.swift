@@ -34,6 +34,7 @@ class DetailCategoryInteractor: DetailCategoryBusinessLogic, DetailCategoryDataS
             response = DetailCategory.FetchPictures.Response(data: detail)
         }.catch(policy: .allErrors) {
             error in
+            alert.showMessage(title: "Oops", msg: error.localizedDescription)
             print("ERROR: ", error.localizedDescription,  "IS CANCELLED: ", error.isCancelled)
         }.finally {
             if let res = response {

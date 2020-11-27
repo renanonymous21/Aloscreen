@@ -34,6 +34,7 @@ class HomeCategoryInteractor: HomeCategoryBusinessLogic, HomeCategoryDataStore {
             response = HomeCategory.FetchCategory.Response(data: cat)
         }.catch(policy: .allErrors) {
             error in
+            alert.showMessage(title: "Oops", msg: error.localizedDescription)
             print("ERROR: ", error.localizedDescription,  "IS CANCELLED: ", error.isCancelled)
         }.finally {
             if let res = response {

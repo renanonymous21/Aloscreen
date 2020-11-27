@@ -69,7 +69,7 @@ class HomeCategoryViewController: UIViewController, HomeCategoryDisplayLogic {
     
     func getCategoriesList() {
         
-        let randomPage = Int.random(in: 1...50)
+        let randomPage = Int.random(in: 1...10)
         let request = HomeCategory.FetchCategory.Request(page: randomPage)
         interactor?.getCategories(request: request)
     }
