@@ -41,7 +41,7 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
         }.finally {
             switch response {
             case .none:
-                alert.showMessage(title: "Oops!", msg: "No account that matched with that username or wrong password, please try again with the correct one")
+                alert.showMessage(title: "Oops!", msg: "No account that matched with that username or wrong password, please try again with the correct one or register the new one")
                 break
             case .some(_):
                 if let res = response {
